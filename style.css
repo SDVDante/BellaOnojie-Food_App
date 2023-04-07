@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #737373;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    max-width: 1313px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    margin-left: 94px;
+}
+
+.menu li a {
+    color: #252B42;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #FA4A0C;
+}
+
+.download_wrap {
+    background: url(Images/bg-app.png) center center no-repeat;
+    background-size: cover; 
+    padding: 73px 0 146px 0;
+}
+
+.download {
+    color: white;
+    text-align: center;
+    max-width: 1080px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.download_txt {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.download_title {
+    font-size: 3rem;
+    line-height: 5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.download_subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin-bottom: 48px;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    padding: 16px 60px 16px 60px; 
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.btn_orange {
+    background: #FA4A0C;
+    border: #FA4A0C;
+}
+
+.workapp {
+    max-width: 1080px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.workapp_wrap {
+    padding: 50px 0;
+}
+
+.parttitle {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.75rem;
+    color: black;
+    margin-bottom: 80px;
+}
+
+.workapp_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.workapp_image {
+    width: 47%;
+    text-align: center;
+}
+
+.workapp_text {
+    width: 50%;
+}
+
+.workapp_text h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #FA4A0C;
+    line-height: 2.25;
+    margin-bottom: 10px;
+}
+
+.workapp_text h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    color: #252B42;
+    margin-bottom: 25px;
+}
+
+.workapp_text p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.375rem;
+    color: #737373;
+}
+
+.workapp_item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.workapp_item:last-child {
+    margin-bottom: 0;
+}
+
+.footer_wrap {
+    padding: 65px 0;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1080px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px; 
+    box-sizing: border-box;
+}
+
+.footer p {
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    color: #5C5C5C;
+}
+
+@media (max-width:800px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .menu li {
+        margin-left: 25px; 
+        margin-right: 25px;
+    }
+
+    .download_txt {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .download_title {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .download_subtitle {
+        font-size: 1.25rem;
+    }
+
+    .download_wrap {
+        padding: 40px 0 70px 0;
+    }
+
+    .parttitle {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .workapp_item {
+        flex-direction: column-reverse;
+    }
+
+    .workapp_item:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+
+    .workapp_text { 
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .workapp_image {
+        width: 100%;
+    }
+
+    .workapp_text h3 {
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+    }
+
+    .workapp_text h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width:600px) {
+    .btn {
+        display: block;
+        margin: 30px auto;
+        width: 290px;
+        box-sizing: border-box;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer img {
+        margin-bottom: 30px; 
+    }
+
+    .footer_wrap {
+        padding: 30px 0;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .menu li {
+        margin: 10px 15px;
+    }
+}
